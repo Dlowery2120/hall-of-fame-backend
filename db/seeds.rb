@@ -46,6 +46,6 @@ q1= Question.create(question: "What Song is This?", gamemode_id: gm1.id)
 q2= Question.create(question: "What Album is This From?", gamemode_id: gm1.id)
 q3= Question.create(question: "What Artist is This?", gamemode_id: gm1.id)
 
-u1 = User.create(username: "ligmaMan", password: "guccigucci", scoreboard_id: sb1.id)
+u1 = User.create(email: "ligmaMan@gmail.com", password: "guccigucci", scoreboard_id: sb1.id)
 
 a1 = Answer.create(answer: "Black Swan", user_id: u1 , question_id: q1.id)
