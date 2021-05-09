@@ -48,4 +48,4 @@ q3= Question.create(question: "What Artist is This?", gamemode_id: gm1.id)
 
 u1 = User.create(email: "ligmaMan@gmail.com", password: "guccigucci", scoreboard_id: sb1.id)
 
-a1 = Answer.create(answer: "Black Swan", user_id: u1 , question_id: q1.id)
+a1 = Answer.create(answer: "Black Swan", user_id: u1.id , question_id: q1.id)
