@@ -10,6 +10,7 @@ Rails.application.routes.draw do
       resources :genres
       resources :scoreboards
       resources :songs
+
       post '/login', to: "auth#login"
     end
   end
