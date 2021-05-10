@@ -53,13 +53,17 @@ ActiveRecord::Schema.define(version: 2021_05_07_151558) do
     t.string "title"
     t.integer "length"
     t.string "album"
+
     t.integer "genre_id"
+
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "email"
+
+    t.string "username"
+
     t.string "password_digest"
     t.integer "scoreboard_id"
     t.datetime "created_at", precision: 6, null: false
