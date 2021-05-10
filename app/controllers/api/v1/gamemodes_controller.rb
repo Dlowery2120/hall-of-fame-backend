@@ -1,9 +1,9 @@
 class Api::V1::GamemodesController < ApplicationController
 
-    before_action :logged_in?
+    # before_action :logged_in?
 
     def index 
-        gamemodes = Gamemodes.all
+        gamemodes = Gamemode.all
         render json: gamemodes
     end
 
